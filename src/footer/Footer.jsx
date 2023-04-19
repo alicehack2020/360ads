@@ -14,11 +14,14 @@ import {
   VStack,
   HStack,
   Button,
+  Image,
+  Heading,
+  Center,
 } from '@chakra-ui/react';
 import { FaFacebook, FaInstagram, FaPhone, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import { EmailIcon, PhoneIcon } from '@chakra-ui/icons';
-
+import logos from "../img/logo-bg.png"
 const Logo = (props) => {
   return (
     <svg
@@ -68,11 +71,11 @@ const ListHeader = ({ children }) => {
     </Text>
   );
 };
-
+// bg={'#00CCCF'}
 const Footer = () => {
   return (
-    <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
+    <Box 
+      bg={useColorModeValue('#00CCCF', '#00CCCF')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid 
@@ -133,7 +136,14 @@ const Footer = () => {
                       
 
           </Stack>
-  </SimpleGrid>
+        </SimpleGrid>
+        <Center>
+        <HStack>
+                     <Image src={logos} w={'50px'}></Image>  
+                      <Heading>TravelPey</Heading>      
+                   </HStack>
+        </Center>
+           
 </Container>
 </Box>
   );
