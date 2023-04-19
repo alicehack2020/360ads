@@ -5,7 +5,7 @@ import user2 from "../img/user2 .png"
 import temp from "../img/temple.png"
 const WhatDoPeopleFeel = () => {
   return (
-    <Box  mx={100} pt={100}>
+      <Box mx={{base:'50',md:'100',lg:'100'}} pt={100}>
          <Heading>What do people feel...</Heading>      
           <SimpleGrid minChildWidth={'300px'} spacing={5}  alignItems={'center'} mt={4}>
               <HStack>

@@ -9,7 +9,7 @@ const Hero = () => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   return (
-    <Box px={{ base: '10px', md: '100', lg: '100' }} pt={100} bg={'#00CCCF'} alignItems={{ base: 'center', md: 'center', lg: 'center' }}> 
+    <Box pb={'20px'} px={{ base: '10px', md: '100', lg: '100' }} pt={100} bg={'#00CCCF'} alignItems={{ base: 'center', md: 'center', lg: 'center' }} w={'100%'}> 
       <HStack>
       <HStack display={{ base: 'none', md: 'none', lg: 'flex' }}>
           <Image src={bags}></Image>
@@ -117,7 +117,7 @@ const Hero = () => {
           </SimpleGrid>
           
 
-          <Button bg='#FFD700' borderRadius={'10px'}>Instant Book</Button>
+          <Button bg='#FFD700' borderRadius={'10px'} color={'black'} colorScheme='#FFD700'>Instant Book</Button>
          
           
       </VStack>

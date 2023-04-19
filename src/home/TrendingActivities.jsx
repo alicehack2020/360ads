@@ -3,11 +3,11 @@ import React from 'react'
 import trending from "../img/trending.png"
 const TrendingActivities = () => {
   return (
-    <Box mx={100}>
+    <Box mx={{ base:10,lg:100}}>
          <Heading>Trending Activities</Heading> 
-          <Text p={3}>Top 3 offers for you in this month! Grab these amazing offers using the coupon codes.</Text> 
+          <Text>Top 3 offers for you in this month! Grab these amazing offers using the coupon codes.</Text> 
           <Center mt={2}>
-            <Image src={trending} h={'250px'}></Image>
+        <Image src={trending} h={{base:'100%',lg:'250px'}}></Image>
           </Center>
          
       </Box>
