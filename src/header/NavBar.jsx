@@ -24,7 +24,7 @@ const NavBar = () => {
               <Link href='#'>
                     <HStack>
                      <Image src={logos} w={'50px'}></Image>  
-                      <Heading>TravelPey</Heading>      
+                          <Heading as={'h1'} fontSize={{ base:'medium',lg: 'xl' }}>TravelPey</Heading>      
                    </HStack>
                 </Link>
                       <HStack spacing='20px'>

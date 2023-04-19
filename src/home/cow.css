@@ -1,0 +1,19 @@
+ 
+.carousel-button-group {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .carousel-button-group button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
