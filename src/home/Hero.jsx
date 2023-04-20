@@ -63,7 +63,7 @@ const Hero = () => {
               <Text>Select Date</Text>
               <HStack border={'none'} bg={'#00FFFF'} borderRadius={'30px'} px={'10px'} py={'5px'}>
                <Image src={location} w={'20px'}></Image>
-                <Input type='date' value="Select Date" border={'none'} w={'100%'} bg={'white'} borderRadius={'10px'}></Input>
+                <Input type='date' value="DD-MM-YYYY" border={'none'} w={'100%'} bg={'white'} borderRadius={'10px'} color={'black'}></Input>
               </HStack>
             
             
