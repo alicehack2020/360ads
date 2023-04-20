@@ -7,15 +7,30 @@ import l1 from "../img/i1.jpg"
 import l2 from "../img/i2.jpg"
 import l3 from "../img/i3.jpg"
 import l4 from "../img/i4.jpg"
-import { Box, Container, Flex, HStack, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import next from "../img/next.png"
+import prev from "../img/prev.png"
+import { Box, Button, Container, Flex, HStack, Heading, Image, Text, VStack, position } from '@chakra-ui/react';
+import { ArrowLeftIcon, ArrowRightIcon } from '@chakra-ui/icons';
 function BestFlight() {
+
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    <img src={prev} alt="nextArrow"  position={'absolute'} top={'30%'} {...props}  width={'300px'}/>
+    
+  );
+
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    <img src={next} alt="nextArrow"  position={'absolute'} top={'30%'} {...props}  width={'300px'}/>
+  );
+  
    const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 3,
-    initialSlide: 0,
+     initialSlide: 0,
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1024,
@@ -47,10 +62,11 @@ function BestFlight() {
  
 
   return (
-    <Box justifyContent={'center'} m={{ base: 0, md: 10 }} pl={{ base: 0, md: 10 }}>
-       <Heading>Popular Flights Near You</Heading>
-      <Text>Find dashing deals on domestic and international flights!</Text>
-      <Slider {...settings}>
+    <Box justifyContent={'center'} m={{ base: 0, md: 10,lg:100}} pl={{ base: 0, md: 10 }}>
+       <Heading>Best Flight Near Me
+     </Heading>
+      <Text>Start Packing! These Countries are Open for Travel!</Text>
+      <Slider {...settings} style={{position:'relative' }}>
         <div className="card1">
           <Flex className="card-top1" gap={0} justifyContent={'center'}>
             <Image src={l1} borderRadius={'30px'} margin={2}/>

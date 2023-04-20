@@ -69,6 +69,7 @@
     width: 200px;
     object-fit: cover;
     background: black;
+    border-radius: 50px;
   }
 
   .card-top1 {
@@ -92,4 +93,16 @@
     right: 0;
     height: 2px;
   }
-   
+  .slick-prev:before,
+  .slick-next:before {
+    color: rgb(255, 0, 234);
+    width: '100px';
+    border: '1px solid green';
+  }
+
+  .slick-prev, .slick-next{
+    height: '100px' !important;
+    width:'100px' !important; 
+  }
+
+  
