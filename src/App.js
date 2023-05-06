@@ -1,8 +1,9 @@
-import PopularFlights from "./home/PopularFlights";
+import "./App.css"
+import Home from "./home/Home";
 function App() {
   return (
-    <div>
-      <PopularFlights />
+    <div className="App">
+      <Home />
     </div>
   );
 }

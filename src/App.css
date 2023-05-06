@@ -1,0 +1,100 @@
+.App {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 100vh;
+  }
+  .slick-slide > div {
+    margin: 0 5px;
+  }
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    height: fit-content;
+    cursor: pointer;
+    height: 300px;
+  }
+  .card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ /* product card */
+.productCard{
+  border: 1px solid rgb(245, 235, 235);
+  padding-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 200px;
+  margin: 5px 0px;
+}
+ .flex{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .productDiscount{
+   font-weight: bold;
+   color: white;
+   background-color: #34C58F;
+   padding: 3px;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+ }
+
+ .favDiv{
+  border-radius: 8px;
+  overflow: hidden;
+  height: fit-content;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+ }
+
+.productImage{
+  padding-top: 10px;
+  overflow: hidden;
+  height: fit-content;
+  cursor: pointer;
+  height: 150px;
+  justify-content: center;
+}
+.productImage > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0px 30px;
+}
+
+.productName{
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.productSize{
+  color: #F3888A;
+  padding: 0px 10px;
+}
+.produtPrice{
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.addToCard{
+  color: #F3888A;
+  border: 1px solid #E1E1EF;
+  padding:5px 10px;
+  margin-right: 5px;
+  width: 80px;
+}
+.productOldPrice{
+  color: gray;
+  text-decoration: line-through;
+  padding:0px 10px;
+}
+.productSaving{
+  color: #34C58F;
+  padding:5px 10px;
+}

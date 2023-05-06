@@ -2,10 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './popular.css';
 import l1 from "../img/i1.jpg"
-import { Image } from '@chakra-ui/react';
-function App() {
+function Banner() {
    const settings = {
     dots: false,
     infinite: true,
@@ -42,41 +40,24 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
     <Slider {...settings}>
         <div className="card">
-            <Image
-              src={
-                l1
-              } 
-            />
+            <img src={l1}/>
         </div>
         <div className="card">
-            <Image
-              src={
-                l1
-              } 
-            />
+            <img src={l1}/>
         </div>
         <div className="card">
-            <Image
-              src={
-                l1
-              } 
-            />
+            <img src={l1}/>
         </div>
         <div className="card">
-            <Image
-              src={
-                l1
-              } 
-            />
+            <img src={l1}/>
         </div>
-         
       
     </Slider>
   </div>
   );
 }
 
-export default App;
+export default Banner;
