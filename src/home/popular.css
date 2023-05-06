@@ -4,105 +4,19 @@
     margin: 0 auto;
     margin-top: 50px;
   }
-  
   .slick-slide > div {
-    margin: 0 10px;
+    margin: 0 5px;
   }
- 
   .card {
-    border: 1px solid #fff;
     border-radius: 8px;
     overflow: hidden;
     height: fit-content;
-    color: #fff;
     cursor: pointer;
+    height: 300px;
   }
-  
-  .card-top h1 {
-    font-size: 0.9rem;
-    margin: 20px;
-  }
-  
-  .card-top > img {
+  .card > img {
     width: 100%;
-    object-fit: cover;
-    background: black;
-  }
-  
-  .card-bottom {
-    margin: 10px 20px;
-  }
-  
-  .category {
-    position: relative;
-  }
-  .category::before {
-    content: '';
-    background: rgb(255, 61, 61);
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    right: 0;
-    height: 2px;
-  }
-   
-  /* .App1 {
     height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-  } */
-  
-  .slick-slide1 > div {
-    margin: 0 10px;
+    object-fit: cover;
   }
  
-  .card1 {
-    border-radius: 8px;
-    overflow: hidden;
-    height: fit-content;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .card-top1 > img {
-    width: 200px;
-    object-fit: cover;
-    background: black;
-    border-radius: 50px;
-  }
-
-  .card-top1 {
-    display: flex;
-  }
-
-  
-  .card-bottom1 {
-    margin: 10px 20px;
-  }
-  
-  .category1 {
-    position: relative;
-  }
-  .category1::before {
-    content: '';
-    background: rgb(255, 61, 61);
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    right: 0;
-    height: 2px;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    color: rgb(255, 0, 234);
-    width: '100px';
-    border: '1px solid green';
-  }
-
-  .slick-prev, .slick-next{
-    height: '100px' !important;
-    width:'100px' !important; 
-  }
-
-  
